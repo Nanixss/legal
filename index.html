@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nanixss Hub — CGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, sticky section switcher, numbered articles (real legal articles) */
+:root {
+  --bg: #f6f9f9;
+  --surface: #ffffff;
+  --fg: #142124;
+  --muted: #546569;
+  --line: #d5e0e1;
+  --accent: #0b8f86;
+  --accent-soft: #e1f3f1;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1416; --surface: #121d20; --fg: #e3eeee; --muted: #93a8ab;
+    --line: #23363a; --accent: #2ed3c4; --accent-soft: #123134; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1416; --surface: #121d20; --fg: #e3eeee; --muted: #93a8ab;
+  --line: #23363a; --accent: #2ed3c4; --accent-soft: #123134; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 46rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 80px; }
+header { display: grid; gap: 8px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.brand { font-family: var(--font-display); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; color: var(--accent); }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 15px; margin: 0; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); display: flex; flex-wrap: wrap; gap: 8px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+nav a { font-family: var(--font-display); font-weight: 600; font-size: 14px; color: var(--fg); text-decoration: none; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { padding-top: 40px; scroll-margin-top: 70px; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 26px; margin: 0 0 6px; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0 0 8px; }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 18px; margin: 28px 0 6px; }
+h3 .num { color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 1.2em; margin: 0 0 10px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-top: 16px; }
+.card p { margin: 0 0 4px; }
+.todo { background: var(--accent-soft); color: var(--fg); padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+.tablewrap { overflow-x: auto; margin: 6px 0 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-display); font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+td.price { font-variant-numeric: tabular-nums; white-space: nowrap; }
+a { color: var(--accent); }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="brand">Nanixss Hub</span>
+    <h1>Conditions générales de vente et politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 11 octobre 2026</p>
+  </header>
+
+  <nav aria-label="Sections">
+    <a href="#mentions">Mentions légales</a>
+    <a href="#cgv">CGV</a>
+    <a href="#confidentialite">Confidentialité</a>
+  </nav>
+
+  <section id="mentions">
+    <h2>Mentions légales</h2>
+    <div class="card">
+      <p><strong>Nanixss Hub</strong>, activité exercée par Lucas Petit, entrepreneur individuel (micro-entreprise)</p>
+      <p>Adresse : 192 rue Pasteur, 02300 Chauny, France</p>
+      <p>SIRET : 940 736 143 00014</p>
+      <p>Contact : nanixss.off@gmail.com</p>
+      <p>TVA non applicable, art. 293 B du CGI</p>
+      <p>Paiements traités par Stripe Payments Europe Ltd. Communauté hébergée sur Discord.</p>
+    </div>
+  </section>
+
+  <section id="cgv">
+    <h2>Conditions générales de vente</h2>
+    <p class="lead">Elles s'appliquent à tout abonnement souscrit à Nanixss Hub. Payer un abonnement vaut acceptation de ces conditions.</p>
+
+    <h3><span class="num">1</span>Objet</h3>
+    <p>Nanixss Hub est une communauté Discord consacrée à l'achat-revente (jeux vidéo, consoles, Vinted). L'abonnement donne accès, pendant sa durée, aux salons réservés, aux outils et bots de la communauté et aux contenus associés au niveau d'offre choisi.</p>
+
+    <h3><span class="num">2</span>Offres et prix</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Offre</th><th>Prix</th><th>Particularités</th></tr></thead>
+        <tbody>
+          <tr><td>Starter</td><td class="price">Prix affiché au paiement</td><td>Accès Starter</td></tr>
+          <tr><td>Elite</td><td class="price">24,99 € / mois</td><td>Accès Elite</td></tr>
+          <tr><td>Founders</td><td class="price">19,99 € / mois</td><td>Accès Elite, 20 places au total. Tarif conservé tant que l'abonnement reste actif sans interruption.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Les prix sont indiqués en euros, toutes taxes comprises (TVA non applicable, art. 293 B du CGI). Le prix applicable est celui affiché sur la page de paiement au moment de la souscription. Toute hausse de prix est annoncée au moins 30 jours à l'avance ; l'abonné peut alors résilier avant qu'elle s'applique.</p>
+
+    <h3><span class="num">3</span>Offre réservée aux acheteurs de la formation</h3>
+    <p>Les acheteurs de la formation Nanixss reçoivent un code personnel, utilisable une seule fois, qui offre les deux premiers mois de l'offre Founders. Le code peut être activé à tout moment. À la fin des deux mois, l'abonnement continue automatiquement à 19,99 € par mois, sauf résiliation avant la fin de la période offerte. Le code est nominatif et ne peut être ni cédé ni revendu.</p>
+
+    <h3><span class="num">4</span>Souscription et accès</h3>
+    <p>La souscription se fait via une page de paiement sécurisée Stripe. L'abonné doit disposer d'un compte Discord et indiquer son pseudo Discord exact : l'accès est attribué automatiquement à ce compte après le paiement. En cas d'erreur de pseudo, l'abonné contacte Nanixss Hub pour que l'accès soit rattaché au bon compte.</p>
+
+    <h3><span class="num">5</span>Paiement et renouvellement</h3>
+    <p>L'abonnement est mensuel et se renouvelle automatiquement chaque mois, à la date anniversaire de la souscription, jusqu'à résiliation. Le paiement est prélevé sur le moyen de paiement enregistré. En cas d'échec, de nouvelles tentatives sont effectuées ; si le paiement n'aboutit pas, l'abonnement et l'accès sont suspendus puis résiliés. Une facture est envoyée par e-mail après chaque paiement.</p>
+
+    <h3><span class="num">6</span>Résiliation</h3>
+    <p>L'abonné peut résilier à tout moment, sans frais, depuis le portail client dont le lien figure dans les e-mails de paiement, ou en écrivant à nanixss.off@gmail.com. La résiliation prend effet à la fin de la période mensuelle en cours : l'accès est conservé jusqu'à cette date et aucun nouveau prélèvement n'a lieu. La période déjà payée n'est pas remboursée au prorata. Pour l'offre Founders, une résiliation met fin au tarif réservé.</p>
+
+    <h3><span class="num">7</span>Droit de rétractation</h3>
+    <p>Conformément au Code de la consommation, l'abonné consommateur dispose d'un délai de 14 jours à compter de la souscription pour se rétracter, sans avoir à se justifier, en écrivant à nanixss.off@gmail.com. L'accès étant fourni immédiatement à sa demande, l'abonné qui se rétracte rembourse la part du service dont il a bénéficié jusqu'à sa demande, calculée au prorata des jours écoulés (article L221-25). Le remboursement intervient sous 14 jours, sur le moyen de paiement utilisé.</p>
+
+    <h3><span class="num">8</span>Règles de la communauté</h3>
+    <p>L'abonné s'engage à respecter les conditions d'utilisation de Discord et les règles affichées sur le serveur. Il est interdit de partager, revendre ou copier les contenus, outils et informations réservés aux abonnés. En cas de manquement grave (fraude, partage d'accès, harcèlement, revente de contenus), Nanixss Hub peut suspendre ou résilier l'abonnement après avoir informé l'abonné, sans remboursement de la période en cours.</p>
+
+    <h3><span class="num">9</span>Absence de garantie de résultat</h3>
+    <p>Les conseils, alertes et outils proposés aident à l'achat-revente mais ne garantissent aucun gain. Les décisions d'achat et de revente restent sous la seule responsabilité de l'abonné. Les prix, stocks et règles des plateformes tierces (Vinted, Leboncoin et autres) peuvent changer à tout moment.</p>
+
+    <h3><span class="num">10</span>Disponibilité et responsabilité</h3>
+    <p>Nanixss Hub fait ses meilleurs efforts pour assurer l'accès au serveur et aux outils, mais dépend de services tiers (Discord, Stripe, hébergeurs, plateformes de vente). Une interruption due à l'un de ces services ou à une maintenance ne peut engager sa responsabilité. En cas d'indisponibilité prolongée imputable à Nanixss Hub, l'abonné peut demander un geste commercial.</p>
+
+    <h3><span class="num">11</span>Réclamations et médiation</h3>
+    <p>Pour toute réclamation, écrivez à nanixss.off@gmail.com. En l'absence d'accord, le consommateur peut recourir gratuitement au médiateur de la consommation : <span class="todo">nom et site du médiateur à compléter</span>.</p>
+
+    <h3><span class="num">12</span>Droit applicable</h3>
+    <p>Les présentes conditions sont soumises au droit français. À défaut d'accord amiable, les tribunaux compétents sont ceux prévus par la loi ; le consommateur peut saisir la juridiction de son domicile.</p>
+  </section>
+
+  <section id="confidentialite">
+    <h2>Politique de confidentialité</h2>
+    <p class="lead">Ce que Nanixss Hub collecte sur ses abonnés, pourquoi, et comment exercer vos droits.</p>
+
+    <h3><span class="num">1</span>Responsable du traitement</h3>
+    <p>Lucas Petit, entrepreneur individuel exerçant sous le nom Nanixss Hub. Contact : nanixss.off@gmail.com.</p>
+
+    <h3><span class="num">2</span>Données collectées</h3>
+    <ul>
+      <li>Identité et contact : nom, adresse e-mail, adresse de facturation.</li>
+      <li>Compte Discord : pseudo et identifiant Discord, rôles attribués.</li>
+      <li>Abonnement : offre choisie, dates, statut, historique des paiements et factures, codes promotionnels utilisés.</li>
+      <li>Paiement : traité directement par Stripe. Nanixss Hub ne voit ni ne conserve jamais votre numéro de carte complet.</li>
+      <li>Échanges : messages envoyés au support.</li>
+    </ul>
+
+    <h3><span class="num">3</span>Pourquoi et sur quelle base</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Finalité</th><th>Base légale</th></tr></thead>
+        <tbody>
+          <tr><td>Gérer l'abonnement, les paiements et l'accès au serveur Discord</td><td>Exécution du contrat</td></tr>
+          <tr><td>Émettre et conserver les factures</td><td>Obligation légale</td></tr>
+          <tr><td>Répondre au support</td><td>Exécution du contrat</td></tr>
+          <tr><td>Prévenir la fraude et le partage d'accès</td><td>Intérêt légitime</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="num">4</span>Destinataires</h3>
+    <p>Vos données ne sont ni vendues ni louées. Elles sont transmises uniquement aux prestataires nécessaires au service :</p>
+    <ul>
+      <li>Stripe : paiements, factures, portail de gestion de l'abonnement.</li>
+      <li>Discord : accès à la communauté et attribution des rôles.</li>
+      <li>Railway : hébergement du bot qui gère les accès.</li>
+      <li>Google (Gmail) : échanges par e-mail.</li>
+    </ul>
+    <p>Certains de ces prestataires peuvent traiter des données hors de l'Union européenne, notamment aux États-Unis. Ces transferts sont encadrés par le Data Privacy Framework ou par des clauses contractuelles types de la Commission européenne.</p>
+
+    <h3><span class="num">5</span>Durée de conservation</h3>
+    <ul>
+      <li>Données d'abonnement et identifiant Discord : pendant l'abonnement, puis 3 ans après sa fin.</li>
+      <li>Factures et données comptables : 10 ans, comme l'exige la loi.</li>
+      <li>Messages au support : 3 ans après le dernier échange.</li>
+    </ul>
+
+    <h3><span class="num">6</span>Vos droits</h3>
+    <p>Vous pouvez accéder à vos données, les rectifier, les effacer, en limiter le traitement, vous opposer à un traitement fondé sur l'intérêt légitime et demander leur portabilité. Écrivez à nanixss.off@gmail.com ; une réponse vous est apportée sous un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de la CNIL (cnil.fr).</p>
+
+    <h3><span class="num">7</span>Cookies</h3>
+    <p>Cette page n'utilise aucun cookie de suivi. Les pages de paiement Stripe et Discord utilisent leurs propres cookies, décrits dans leurs politiques respectives.</p>
+  </section>
+
+  <footer>
+    Nanixss Hub · nanixss.off@gmail.com · TVA non applicable, art. 293 B du CGI
+  </footer>
+</div>
+</body>
+</html>
